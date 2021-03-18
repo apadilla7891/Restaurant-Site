@@ -1,0 +1,81 @@
+<!DOCTY<!DOCTYPE html>
+<!--
+    Name: Andy Padilla
+    Date Created: 3/12/2021
+    Most recent revision:
+-->
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			section{
+			display:flex;
+			text-align:left;
+			margin-left:40%;
+			margin-right:auto;
+			}
+			input{
+				margin-bottom:10px;
+			}
+			label{
+			font-weight:bold;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Bob's Burger Joint</h1>
+		</header>
+		
+		<nav>
+			<p><a href="home.html">Home</a>&emsp;
+			<a href="menu.html">Menu</a>&emsp;
+			<a href="contact.html">Contact Us</a>
+			</p>
+		</nav>	
+		<br /><br /><br />
+			<section>
+			
+				<form action="submit" method="POST" class="formBlock">
+					<label for="userName">Name: </label>
+					<input type="text" name="userName" id="userName" /> <br />
+					<label for="userEmail">Email: </label>
+					<input type="text" name="userEmail" id="userEmail" /> <br />
+					<label for="phone">Phone: </label>
+					<input type="text" name="phone" id="phone" /> <br />
+					
+					<label for="reason">Reason for Inquiry:</label>
+					<select name="reason">
+						<option value="catering">Catering</option>
+						<option value="private party">Private Party</option>
+						<option value="feedback">Feedback</option>
+						<option value="other">Other</option>
+					</select> <br />
+					
+					<label for="additionalInfo">Additional Information:</label><br />
+					<textarea name="additionalInfo"></textarea><br />
+					
+					<label for="answer">Have you been to the restaurant?: </label>
+					<input type="radio" name="answer" value="NO" checked />No
+					<input type="radio" name="answer" value="YES" />Yes <br />
+					
+					<label for="days">Best days to contact you:   </label>
+					<input type="checkbox" name="days" value="Monday" />M
+					<input type="checkbox" name="days" value="Tuesday" />T
+					<input type="checkbox" name="days" value="Wednesday" />W
+					<input type="checkbox" name="days" value="Thursday" />Th
+					<input type="checkbox" name="days" value="Friday" />F <br />
+					<input type="submit" value="Send Request" />
+				</form>
+			</section>
+		<br /><br /><br />
+	</body>
+	
+	<footer>
+	<p>
+	123 Main Street, Albany, NY 12345 <br />
+	(123)-456-7890
+	</p>
+</html>
