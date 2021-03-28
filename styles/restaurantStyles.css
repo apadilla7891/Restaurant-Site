@@ -38,3 +38,23 @@ nav a:active {
 header h1 {
 	font-family: arial, helvetica, sans-serif;
 }
+li a{
+	background-color: #cce6ff;
+}
+ .nav-link.active{
+	background-color: #99ccff !important;
+	border: 1px solid black;
+	border-bottom-color: transparent;
+}
+.jumbotron{
+	background-color: #e4c3ad;
+}
+.carousel{
+    background: #e4c3ad;
+    margin: 5px;
+}
+.carousel-item{
+	font-weight:bold;
+    text-align: center;
+	padding: 30px;
+}
